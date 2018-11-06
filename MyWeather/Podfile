@@ -3,5 +3,4 @@ use_frameworks!
 
 target 'MyWeather' do
   pod 'AFNetworking', '~> 2.6'
-  pod 'SwiftyJSON', '~> 2.3'
 end

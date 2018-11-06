@@ -36,7 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("locationManager didUpdateLocations")
-        var location:CLLocation = locations[locations.count - 1] as CLLocation
+        let location:CLLocation = locations[locations.count - 1] as CLLocation
         if(location.horizontalAccuracy > 0) {
             print(location.coordinate.latitude)
             print(location.coordinate.longitude)
