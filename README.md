@@ -165,24 +165,15 @@ Optional({
 本章通过IBOutlets更新View
 - 7-1 通过IBOutlets更新View (23:08)
 
+<p>
+    <img src="https://github.com/CoderDream/MyWeather/blob/master/snapshot/w01.png" alt="Sample"  width="360" height="640">
+</p>
+
 ### 第8章 美化我们的APP
 本章是对我们的APP进行一个美化，让我们的界面更加优美
 - 8-1 美化我们的APP (09:25)
 
 
-![](https://github.com/CoderDream/MyWeather/blob/master/snapshot/w01.png)
-
-<p align="center">
-    <img src="https://github.com/CoderDream/MyWeather/blob/master/snapshot/w01.png" alt="Sample"  width="360" height="640">
-    <p align="center">
-        <em>图片示例2</em>
-    </p>
-</p>
---------------------- 
-作者：lovechris00 
-来源：CSDN 
-原文：https://blog.csdn.net/lovechris00/article/details/82379382 
-版权声明：本文为博主原创文章，转载请附上博文链接！
 
 课程须知
 - 1、具有C#、Javascript、Ruby等语言开发经验的iOS初学者；
