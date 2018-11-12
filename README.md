@@ -72,7 +72,7 @@ func updateWeatherInfo(latitude:CLLocationDegrees, longitude:CLLocationDegrees) 
 ```
 
 打印JSON：
-```json
+```swift
 Optional({
     base = stations;
     clouds =     {
