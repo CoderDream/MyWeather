@@ -48,10 +48,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func updateWeatherInfo(latitude:CLLocationDegrees, longitude:CLLocationDegrees) {
         let manager = AFHTTPRequestOperationManager()
-        // let url = "http://api.openweathermap.org/data/2.5/weather";
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=fcd536623ed6b6d4d6abfdbea7478b45"
+        let url = "http://api.openweathermap.org/data/2.5/weather";
+        //let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=15f8d9e4177673f65179362e732d65bf"
         
-        let params = ["lat": latitude, "lon":longitude, "cnt":0]
+        let params = ["lat": latitude, "lon":longitude, "cnt":0, "APPID":"15f8d9e4177673f65179362e732d65bf"] as Any
         
 //        manager.get(url, parameters: params, success: {
 //            (operation:AFHTTPRequestOperation!, responseObject: AnyObject!) in
@@ -66,8 +66,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     parameters: params,
                     success: { (operation: AFHTTPRequestOperation,
                         responseObject: Any) in
-                        var stock = responseObject as? NSDictionary
-                        print(stock);
+                        var info = responseObject as? NSDictionary
+                        print(info);
                         print("OK")
                         
                        // self.updateUISuccess(responseObject as NSDictionary!)
