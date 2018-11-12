@@ -52,16 +52,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //let url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=15f8d9e4177673f65179362e732d65bf"
         
         let params = ["lat": latitude, "lon":longitude, "cnt":0, "APPID":"15f8d9e4177673f65179362e732d65bf"] as Any
-        
-//        manager.get(url, parameters: params, success: {
-//            (operation:AFHTTPRequestOperation!, responseObject: AnyObject!) in
-//            print("JSON: " + responseObject.description!)
-//        }, failure: {
-//            (operation:AFHTTPRequestOperation!, error: NSError!) in
-//            print("Error: " + error.localizedDescription)
-//        })
-        
-       
         manager.get(url,
                     parameters: params,
                     success: { (operation: AFHTTPRequestOperation,
