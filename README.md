@@ -173,7 +173,11 @@ Optional({
 本章是对我们的APP进行一个美化，让我们的界面更加优美
 - 8-1 美化我们的APP (09:25)
 
+<p>
+    <img src="https://github.com/CoderDream/MyWeather/blob/master/snapshot/w02.png" alt="loading"  width="360" height="640">
 
+    <img src="https://github.com/CoderDream/MyWeather/blob/master/snapshot/w03.png" alt="loading"  width="360" height="640">
+</p>
 
 课程须知
 - 1、具有C#、Javascript、Ruby等语言开发经验的iOS初学者；
