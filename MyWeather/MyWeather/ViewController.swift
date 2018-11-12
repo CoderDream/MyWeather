@@ -16,6 +16,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var loading: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
@@ -23,6 +25,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        // 启动加载动画
+        self.loadingIndicator.startAnimating()
+        
+        // 设置背景图片
+        let background = UIImage(named: "background.png")
+        self.view.backgroundColor = UIColor(patternImage: background!)
+        
+//        var sunsetDouble:Double = 0.0
+//        if(sunset != nil) {
+//            sunsetDouble = sunset!
+//        }
         
         print(UIDevice.current.systemVersion)
         //if(ios8()) {
@@ -76,7 +90,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func updateUISuccess(jsonResult:NSDictionary!) {
-        // if let tempResult = (jsonResult["main"] as! NSDictionary)["temp"] as? Double {
+        // 停止加载动画
+        self.loadingIndicator.isHidden = true
+        self.loadingIndicator.stopAnimating()
+        // 清空加载文字
+        self.loading.text = nil
+        
         if let tempResult = (jsonResult["main"] as! NSDictionary)["temp"] as? Double {
             var temperature: Double = 0.0
             if((jsonResult["sys"] as! NSDictionary)["country"] as? String == "US") {
@@ -124,7 +143,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             print(nightTime)
             self.updateWeatherIcon(condition: condition, nightTime: nightTime)
         } else {
-            
+            self.loading.text = "天气信息不可用"
         }
     }
     
@@ -206,6 +225,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("locationManager didFailWithError")
         print(error)
+        self.loading.text = "地理信息不可用"
     }
     
 }
