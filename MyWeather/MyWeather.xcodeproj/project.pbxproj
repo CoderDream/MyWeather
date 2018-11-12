@@ -81,6 +81,7 @@
 		3F26691321916B1300B4E70E /* overcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overcast.png; sourceTree = "<group>"; };
 		3F26691421916B1300B4E70E /* fog_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fog_night.png; sourceTree = "<group>"; };
 		3F26691521916B1300B4E70E /* dunno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dunno.png; sourceTree = "<group>"; };
+		3F26692E21918E8300B4E70E /* MyWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C755A05DBAEC8E0E7A3CA60 /* Pods-MyWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeather/Pods-MyWeather.release.xcconfig"; sourceTree = "<group>"; };
 		CB5222B3BFA793186941A6D0 /* Pods-MyWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeather/Pods-MyWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +141,7 @@
 				3F2668D5219141E400B4E70E /* AppDelegate.swift */,
 				3F2668D7219141E400B4E70E /* ViewController.swift */,
 				3F2668D9219141E400B4E70E /* Main.storyboard */,
+				3F26692E21918E8300B4E70E /* MyWeather-Bridging-Header.h */,
 				3F2668DC219141ED00B4E70E /* Assets.xcassets */,
 				3F2668DE219141ED00B4E70E /* LaunchScreen.storyboard */,
 				3F2668E1219141ED00B4E70E /* Info.plist */,
@@ -514,6 +516,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyWeather/MyWeather-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -568,6 +571,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyWeather/MyWeather-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
