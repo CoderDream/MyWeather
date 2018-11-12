@@ -40,6 +40,11 @@
                         <color key="backgroundColor" red="0.26393219108443255" green="0.34264460682772191" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zAP-sC-QKN"/>
                     </view>
+                    <connections>
+                        <outlet property="icon" destination="cyi-m0-1eM" id="cHm-lW-BC6"/>
+                        <outlet property="location" destination="MZW-t3-CIf" id="ELL-AD-isH"/>
+                        <outlet property="temperature" destination="uh4-e0-fys" id="iEQ-ID-8a8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfy-FT-wP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
