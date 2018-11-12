@@ -36,6 +36,8 @@ MyWeather with Swift
 本章使用AFNetworking发送数据请求
 - 6-1 使用AFNetworking (10:15)
 
+API要先注册，然后获取APPID：[API Keys地址](https://home.openweathermap.org/api_keys)
+
 用PostMan测试下面的地址
 ```
 http://api.openweathermap.org/data/2.5/weather?lat=30.480718452305457&lon=114.4017477818732&cnt=0&APPID=15f8d9e4177673f65179362e732d65bf
