@@ -173,6 +173,11 @@ Optional({
 本章是对我们的APP进行一个美化，让我们的界面更加优美
 - 8-1 美化我们的APP (09:25)
 
+1. 去掉所有控件的初始值，包括Label、UIImageView
+2. 新增加载控件和提示Label
+3. 在viewDidLoad中增加启动动画
+4. 在加载完毕后隐藏加载控件和提示标签
+
 <p>
     <img src="https://github.com/CoderDream/MyWeather/blob/master/snapshot/w02.png" alt="loading"  width="360" height="640">
 </p>
